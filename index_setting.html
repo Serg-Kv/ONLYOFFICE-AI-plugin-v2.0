@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Setting</title>
+    <script type="text/javascript" src="https://onlyoffice.github.io/sdkjs-plugins/v1/plugins.js"></script>
+    <script type="text/javascript" src="https://onlyoffice.github.io/sdkjs-plugins/v1/plugins-ui.js"></script>
+    <link rel="stylesheet" href="https://onlyoffice.github.io/sdkjs-plugins/v1/plugins.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f2f2f2;
+        }
+        div {
+            margin-bottom: 10px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        select, input {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+    </style>
+    <script type="text/javascript">
+        // window.Asc.plugin.init = function()
+        // {
+        //     this.resizeWindow(392, 200, 392, 147, 392, 147);
+        //
+        //     let apikey = localStorage.getItem('apikey');
+        //     let model = localStorage.getItem('model');
+        //     document.getElementById('tokenInput').value = apikey;
+        //     document.getElementById('modelSelection').value = model;
+        //
+        // };
+        //
+        // window.Asc.plugin.button = function(id)
+        // {
+        //     let model = document.getElementById('modelSelection').value;
+        //     let apikey = document.getElementById('tokenInput').value;
+        //
+        //     localStorage.setItem('model', model);
+        //     localStorage.setItem('apikey', apikey);
+        //
+        //     this.executeCommand("close", "");
+        // };
+        (function (window, undefined){
+            window.Asc.plugin.init = function()
+            {
+                this.resizeWindow(392, 200, 392, 147, 392, 147);
+
+                let apikey = localStorage.getItem('apikey');
+                let model = localStorage.getItem('model');
+                document.getElementById('tokenInput').value = apikey;
+                document.getElementById('modelSelection').value = model;
+
+            };
+            window.Asc.plugin.button = function(id)
+            {
+                let model = document.getElementById('modelSelection').value;
+                let apikey = document.getElementById('tokenInput').value;
+
+                localStorage.setItem('model', model);
+                localStorage.setItem('apikey', apikey);
+
+                this.executeCommand("close", "");
+            };
+
+            window.Asc.plugin.onTranslate = function (){
+                document.getElementById('tokenInput').placeholder = window.Asc.plugin.tr("Set ZhiPu API KEY");
+                document.getElementById('label_chooseModel').value = window.Asc.plugin.tr("Choose a model");
+            };
+        })(window, undefined);
+
+    </script>
+</head>
+<body>
+    <div>
+        <label for="modelSelection" id="label_chooseModel">Choose a model</label>
+        <select id="modelSelection">
+            <option value="glm-4">ChatGLM-4</option>
+            <option value="glm-4-0520">GLM-4-0520</option>
+            <option value="glm-4-air">GLM-4-AIR</option>
+            <option value="glm-4-plus">GLM-4-PLUS</option>
+            <option value="glm-4-flash">GLM-4-FLASH</option>
+        </select>
+    </div>
+    <div>
+        <label for="tokenInput">ZhiPu AI API:</label>
+        <input type="text" id="tokenInput" placeholder="Set ZhiPu API KEY">
+    </div>
+<script>
+    // console.log("translate");
+    // document.getElementById('tokenInput').placeholder = window.Asc.plugin.tr("Set ZhiPu API KEY");
+    // document.getElementById('label_chooseModel').value = window.Asc.plugin.tr("Choose a model");
+</script>
+</body>
+</html>
