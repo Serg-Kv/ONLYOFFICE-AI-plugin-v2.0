@@ -72,14 +72,13 @@ We design friendly Zhipu AI interface and improved prompts of request. We will g
 
 ## Usage
 1. Fill in the ZhiPu API Key in the plugin settings to enable API calls.
-2. Select text in the editor, right-click and select "ZhiPu Copilot" to process the text directly.
-3. In the submenu, you can select "Summary text", "Translation" and other functions to process the selected content.
-4. Chat with the AI assistant in the chat interface, ask questions, and let the assistant summarize the text.
-5. Enter text and click send or press Enter to send a message to the assistant.
-6. The assistant's reply will be automatically displayed in the dialog box.
+2. Select content in the editor, right-click and select "ZhiPu Copilot" to process the selected content directly.
+3. In the submenu, you can select "Analyse text", "Text to image" and other functions to process the selected content.
+4. Chat with the AI assistant in the chat interface, ask questions, and let the assistant answer you question.
+
 
 ## Support
-If you have any questions or issues, please create an issue or contact me at jianbo.lin@outlook.com or zlj.1015@foxmail.com.
+If you have any questions or issues, please create an issue or contact me at zlj.1015@foxmail.com.
 
 ## License
 This project is licensed under the MIT License.
