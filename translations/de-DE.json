@@ -30,10 +30,10 @@
     "Explain text": "Text erklären",
     "Correct spelling and grammar": "Rechtschreibung und Grammatik korrigieren",
     "Hi there! I am Zhipu copilot, how can I help you today?": "Hallo! Ich bin Zhipu Copilot, wie kann ich Ihnen heute helfen?",
-    "Sorry, selecting multiple cells in a spreadsheet for error correction is not currently supported. Please select the text in a single cell.": "Entschuldigung, das Auswählen mehrerer Zellen in einer Tabelle zur Fehlerkorrektur wird derzeit nicht unterstützt. Bitte wählen Sie den Text in einer einzelnen Zelle.",
-    "Sorry, selecting multiple cells in a spreadsheet for summarization is not currently supported. Please select the text in a single cell.": "Entschuldigung, das Auswählen mehrerer Zellen in einer Tabelle zur Zusammenfassung wird derzeit nicht unterstützt. Bitte wählen Sie den Text in einer einzelnen Zelle.",
-    "Sorry, selecting multiple cells in a spreadsheet for explanation is not currently supported. Please select the text in a single cell.": "Entschuldigung, das Auswählen mehrerer Zellen in einer Tabelle zur Erklärung wird derzeit nicht unterstützt. Bitte wählen Sie den Text in einer einzelnen Zelle.",
-    "Sorry, selecting multiple cells in a spreadsheet for translation is not currently supported. Please select the text in a single cell.": "Entschuldigung, das Auswählen mehrerer Zellen in einer Tabelle zur Übersetzung wird derzeit nicht unterstützt. Bitte wählen Sie den Text in einer einzelnen Zelle.",
+    "Sorry, please select text in a cell to proceed correct selected spelling and grammar.": "Entschuldigung, bitte wählen Sie Text in einer Zelle aus, um die ausgewählte Rechtschreibung und Grammatik zu korrigieren.",
+    "Sorry, please select text in a cell to proceed summarize the selected text.": "Entschuldigung, bitte wählen Sie Text in einer Zelle aus, um den ausgewählten Text zusammenzufassen.",
+    "Sorry, please select text in a cell to proceed explain the selected text.": "Entschuldigung, bitte wählen Sie Text in einer Zelle aus, um den ausgewählten Text zu erklären.",
+    "Sorry, please select text in a cell to proceed translate selected text.": "Entschuldigung, bitte wählen Sie Text in einer Zelle aus, um den ausgewählten Text zu übersetzen.",
     "Zhipu Copilot Chat": "Zhipu Copilot Chat",
     "Clear Chat": "Chat löschen",
     "Send Message": "Nachricht senden",
@@ -98,5 +98,6 @@
     "Temperature": "Temperatur",
     "Stop sequences": "Stop-Sequenzen",
     "This plugin doesn't work in Internet Explorer.": "Dieses Plugin funktioniert nicht im Internet Explorer.",
-    "Tokens: ": "Tokens: "
+    "Tokens: ": "Tokens: ",
+    "ZhiPu AI API Key": "ZhiPu AI API-Schlüssel"
 }

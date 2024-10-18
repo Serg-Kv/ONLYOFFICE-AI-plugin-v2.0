@@ -12,7 +12,7 @@
     "translate to French": "翻译成法文",
     "translate to German": "翻译成德文",
     "translate to Russian": "翻译成俄文",
-
+    "ZhiPu AI API Key": "智谱AI API Key",
     "clear chat history": "清除对话历史",
     "Choose a model": "选择模型",
     "Clear chat history": "清除对话历史",
@@ -30,10 +30,10 @@
     "Explain text": "解释文本",
     "Correct spelling and grammar": "纠正拼写和语法",
     "Hi there! I am Zhipu copilot, how can I help you today?": "你好！我是智谱 Copilot，今天我能帮你什么？",
-    "Sorry, selecting multiple cells in a spreadsheet for error correction is not currently supported. Please select the text in a single cell.": "抱歉，目前不支持在电子表格中选择多个单元格进行错误更正。请选中单元格中的文本。",
-    "Sorry, selecting multiple cells in a spreadsheet for summarization is not currently supported. Please select the text in a single cell.": "抱歉，目前不支持在电子表格中选择多个单元格进行总结。请选中单元格中的文本。",
-    "Sorry, selecting multiple cells in a spreadsheet for explanation is not currently supported. Please select the text in a single cell.": "抱歉，目前不支持在电子表格中选择多个单元格进行解释。请选中单元格中的文本。",
-    "Sorry, selecting multiple cells in a spreadsheet for translation is not currently supported. Please select the text in a single cell.": "抱歉，目前不支持在电子表格中选择多个单元格进行翻译。请选中单元格中的文本。",
+    "Sorry, please select text in a cell to proceed correct selected spelling and grammar.": "抱歉，请选择单元格中的文本方可使用纠正所选的拼写和语法功能。",
+    "Sorry, please select text in a cell to proceed summarize the selected text.": "抱歉，请选择单元格中的文本方可使用总结所选文本功能。",
+    "Sorry, please select text in a cell to proceed explain the selected text.": "抱歉，请选择单元格中的文本方可使用解释所选文本功能。",
+    "Sorry, please select text in a cell to proceed translate selected text.": "抱歉，请选择单元格中的文本方可使用翻译所选文本功能。",
     "Zhipu Copilot Chat": "智谱AI助手",
     "Clear Chat": "清除对话",
     "Send Message": "发送消息",
@@ -98,5 +98,7 @@
     "Temperature" : "温度",
     "Stop sequences" : "停止序列",
     "This plugin doesn't work in Internet Explorer." : "此插件无法在 Internet Explorer 浏览器中使用。",
-    "Tokens: " : "代币: "
+    "Tokens: " : "代币: ",
+    "stop": "停止",
+    "regeneration": "重新生成"
 }

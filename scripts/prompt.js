@@ -1,41 +1,12 @@
 
-const explainContentPrompt = (content, language) => `Please use ${language} language to produce a concise explanatory essay explaining the following content:
-${content}
+const explainContentPrompt = (content, language) => `Please use ${language} language and do not use markdown or HTML formatting in your response, only plain text, to produce a concise explanatory essay explaining the following content:
+${content}`;
+const analyzeTextPrompt = (content, language) => `Analyze the following text, provide your response in plain text without using any Markdown formatting or special characters. And use ${language} to express your analysis effectively:
+${content}`;
 
-The requirements are as follows:
-- The length of the article should be between 300-500 words
-- Use simple and easy-to-understand language, aimed at ordinary readers
-- Organize the content according to the following structure:
-  1. Briefly introduce the background and importance of the topic
-  2. Elaborate on the core concepts and key features of the topic
-  3. Provide examples of typical scenarios in which the topic is applied
-  4. Summarize the value and significance of the topic
-- Do not use markdown or HTML formatting in your response, only plain text.
+const correctContentPrompt = (content, language) => `Please identify and correct the grammatical errors in the following sentence. Do not use any markdown or HTML formatting in your response, only plain text. Describe the corrections in ${language} , but when given a revised sentence, be consistent with the language of the original sentence:
+${content}`;
 
-Please answer the topic as comprehensively and accurately as possible, while paying attention to the structure of the article and the fluency of language expression.`;
-
-const analyzeTextPrompt = (content, language) => `Analyze the following text:
-${content}
-
-Requirements:
-- Provide a detailed analysis of the content
-- Identify the key points and arguments
-- Offer insights and opinions on the text
-- Use ${language} to express your analysis effectively
-- Do not use markdown or HTML formatting in your response, only plain text.
-
-Please answer the topic as comprehensively and accurately as possible, while paying attention to the structure of the article and the fluency of language expression.`;
-
-const correctContentPrompt = (content) => `Correct the following text:
-${content}
-
-Requirements:
-- Identify and correct any grammatical errors.
-- Provide the corrected sentence as requested.
-- You should respond use the same language as the original text.
-- Do not use markdown or HTML formatting in your response, only plain text.
-
-Please answer the topic as comprehensively and accurately as possible, while paying attention to the structure of the article and the fluency of language expression.`;
 
 const completeTextPrompt = (content) => `Please complete the following text:   
 ${content}.
@@ -55,6 +26,7 @@ ${content}.
 
 Requirements:
 - Use ${language} to express your summary effectively;
+- Keep your summary as short as possible
 `;
 
 // - Use structured and coherent sentences to summarize the content;
@@ -68,27 +40,11 @@ Your article should provide a comprehensive analysis, exploring different aspect
 The article should be between 500-800 words and written in ${language}. Ensure the content is well-structured, engaging, and informative.`;
 
 
-const explainCellPrompt = (content, language) => `Please explain the following form. The form is ### wrapped in content and the table elements are separated by Spaces. The explanation should be in ${language} language.
-${content}
+const explainCellPrompt = (content, language) => `Please explain the following form. Do not use markdown or HTML formatting in your response, only plain text. The form is ### wrapped in content and the table elements are separated by Spaces. The explanation should be in ${language} language.
+${content}`;
 
-Requirements:
-- Provide a detailed explanation of the content
-- Identify the key concepts and relationships
-- Offer insights and opinions on the data
-- Use ${language} to express your explanation effectively
-- Do not use markdown or HTML formatting in your response, only plain text.
-`;
-
-const summariseCellPrompt = (content, language) => `Please summarise the following form. The form is ### wrapped in content and the table elements are separated by Spaces. The explanation should be in ${language} language.
-${content}
-
-Requirements:
-- Provide a concise summary of the content
-- Highlight the key points and trends
-- Offer insights and opinions on the data
-- Use ${language} to express your summary effectively
-- Do not use markdown or HTML formatting in your response, only plain text.
-`;
+const summariseCellPrompt = (content, language) => `Please summarise the following form. Do not use markdown or HTML formatting in your response, only plain text. The form is ### wrapped in content and the table elements are separated by Spaces. The explanation should be in ${language} language.
+${content}`;
 
 const rewriteContentPrompt = (content) => `Please rewrite the following: 
 ${content};
