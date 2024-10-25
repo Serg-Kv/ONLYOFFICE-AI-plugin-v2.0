@@ -99,5 +99,6 @@
     "Stop sequences": "Последовательности остановки",
     "This plugin doesn't work in Internet Explorer.": "Этот плагин не работает в браузере Internet Explorer.",
     "Tokens: ": "Токены: ",
+    "Invalid format" : "Неверный формат",
     "Authentication failure, please check that the API KEY is correct" : "Ошибка аутентификации, пожалуйста, проверьте правильность ключа API."
 }

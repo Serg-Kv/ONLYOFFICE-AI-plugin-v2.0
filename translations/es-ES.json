@@ -99,5 +99,6 @@
     "This plugin doesn't work in Internet Explorer.": "Este complemento no funciona en Internet Explorer.",
     "Tokens: ": "Tokens: ",
     "ZhiPu AI API Key": "Clave API de ZhiPu AI",
+    "Invalid format" : "Formato inválido",
     "Authentication failure, please check that the API KEY is correct" :   "Error de autenticación, por favor comprueba que la clave API es correcta."
 }
