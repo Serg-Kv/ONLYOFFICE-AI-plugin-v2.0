@@ -36,6 +36,19 @@ function zhipuChatRequest(prompt, systemMessage, stream, config, signal) {
             body: JSON.stringify(data),
             signal: signal
         }).then(response => {
+            if (!response.ok) {
+                return response.json().then(errData => {
+                    let errorMessage;
+                    switch (errData.error.code) {
+                        case '1000':
+                            errorMessage = `Authentication failure, please check that the API KEY is correct`;
+                            break;
+                        default:
+                            errorMessage = errData.error.message;
+                    }
+                    reject(new Error(errorMessage));
+                });
+            }
             if (stream) {
                 const reader = response.body.pipeThrough(new TextDecoderStream()).getReader();
                 resolve(reader);

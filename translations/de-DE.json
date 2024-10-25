@@ -99,5 +99,6 @@
     "Stop sequences": "Stop-Sequenzen",
     "This plugin doesn't work in Internet Explorer.": "Dieses Plugin funktioniert nicht im Internet Explorer.",
     "Tokens: ": "Tokens: ",
-    "ZhiPu AI API Key": "ZhiPu AI API-Schlüssel"
+    "ZhiPu AI API Key": "ZhiPu AI API-Schlüssel",
+    "Authentication failure, please check that the API KEY is correct" : "Authentifizierungsfehler, bitte überprüfen Sie, ob der API-Schlüssel korrekt ist."
 }
