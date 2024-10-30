@@ -100,4 +100,6 @@
     "This plugin doesn't work in Internet Explorer.": "Ce plugin ne fonctionne pas dans Internet Explorer.",
     "Tokens: ": "Jetons: ",
     "ZhiPu AI API Key": "Clé API ZhiPu AI",
+    "Invalid format" : "Format invalide",
+    "Authentication failure, please check that the API KEY is correct" : "Échec de l'authentification, veuillez vérifier que la clé API est correcte."
 }

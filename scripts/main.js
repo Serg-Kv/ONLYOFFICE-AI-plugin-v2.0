@@ -980,7 +980,9 @@
     }
     function endChat() {
         regenButton.style.display = 'block';
-        loadElement.style.display = 'none';
+        if (loadElement) {
+            loadElement.style.display = 'none';
+        }
         stopButton.style.display = 'none';
     }
     function chatRequest(request) {
@@ -1010,10 +1012,12 @@
                     });
 
             })
-               .catch(err => {
-                   endChat();
-                    console.log("SSE request failed", err);
-                });
+            .catch(err => {
+                endChat();
+                let message = window.Asc.plugin.tr(err.message);
+                displayMessage(message, 'ai-message',true);
+                console.log("SSE request failed", err);
+            });
     }
 
     function stopChatRequest() {

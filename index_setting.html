@@ -60,7 +60,27 @@
                 document.getElementById('APILabel').innerText = window.Asc.plugin.tr("ZhiPu AI API Key");
             };
         })(window, undefined);
+        document.addEventListener('DOMContentLoaded', function() {
+            const inputField = document.getElementById('tokenInput');
+            const validationMessage = document.createElement('div');
+            validationMessage.style.color = 'red';
+            inputField.parentNode.appendChild(validationMessage);
 
+            inputField.addEventListener('input', function() {
+                const value = inputField.value;
+                if (validateInput(value)) {
+                    validationMessage.textContent = '';
+                } else {
+                    validationMessage.textContent = window.Asc.plugin.tr("Invalid format");
+                }
+            });
+
+            function validateInput(value) {
+                // Example: Validate if the input is a valid API key ({id}.{secret})
+                const apiKeyPattern = /^[a-zA-Z0-9]+\.[a-zA-Z0-9]+$/;
+                return apiKeyPattern.test(value);
+            }
+        });
     </script>
 </head>
 <body>
